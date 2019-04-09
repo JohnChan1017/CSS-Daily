@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.first {
+  width: 112px;
+  height: 112px;
+  background-color: #333;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second {
+  width: 46px;
+  height: 46px;
+  background-color: #fa8824;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.third {
+  width: 6px;
+  height: 6px;
+  background-color: #d0b69e;
+  border-radius: 50%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.eight-note {
+  /* left: 50%;
+  top: 50%; */
+}

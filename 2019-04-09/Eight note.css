@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ccc;
+}
+.eight-note {
+/*   
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+  
+  height: 100px;
+  width: 100px;
+  position: relative;
+  
+}
+.eight-note>div{
+  /* background-color: #666; */
+}
+.eight-note>.bottom {
+  width: 50px;
+  height: 50px;
+  border-top-left-radius: 80%;
+  border-bottom-right-radius: 80%;
+  border-bottom-left-radius: 25%;
+  border-top-right-radius: 12%;
+  background-color: #000;
+  position: absolute;
+  top: 100px;
+  right: 8px;
+  transform: rotate(25deg);
+  -webkit-transform: rotate(25deg);
+}
+.eight-note>.middle {
+  width: 8px;
+  height: 110px;
+  background-color: #000;
+  position:absolute;
+  top: 8px;
+  right: 0;
+  transform: rotate(25deg);
+  -webkit-transform: rotate(2deg)
+}
+.eight-note>.top {
+  width: 0;
+  height: 0;
+  border-left: 40px solid #000;
+  border-top-left-radius: 8%;
+  border-bottom: 20px solid #000;
+  border-bottom-left-radius: 8%;
+  border-right: 40px solid transparent;
+  border-top: 20px solid transparent;
+  position: absolute;
+  /* left: 92px; */
+  top: 9px;
+  transform: rotate(8deg);
+  -webkit-transform: rotate(8deg);
+  
+}
+
+.eight-note {
+  animation: playing 1.8s linear infinite;
+  -webkit-animation: playing 1.8s linear infinite;
+}
+@keyframes playing {
+  0% {
+    transform: rotate(0deg) scale(0.1) translateX(38px) translateY(6px);
+    -webkit-transform: rotate(0deg) scale(0.1) translateX(38px)  translateY(6px);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.1) translateX(38px)  translateY(6px);
+    -webkit-transform: rotate(360deg) scale(0.1) translateX(38px)  translateY(6px);
+  }
+}
+@-webkit-keyframes playing {
+  0% {
+    transform: rotate(0deg) scale(0.1) translateX(38px) translateY(6px);
+    -webkit-transform: rotate(0deg) scale(0.1) translateX(38px)  translateY(6px);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.1) translateX(38px)  translateY(6px);
+    -webkit-transform: rotate(360deg) scale(0.1) translateX(38px)  translateY(6px);
+  }
+}
